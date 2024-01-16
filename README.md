@@ -4,7 +4,7 @@
 
 In diesem Projekt ging es darum, ein Lego-Fahrzeug über eine Website fernzusteuern. Die Website wird von einem Raspberry Pi gehostet. Serverseitig wurden die Frameworks Node.js und rpio verwendet, clientseitig wurde auf Frameworks verzichtet.
 
-![Ergebnissbild](/src/img/ergebnis.jpg)
+![Ergebnissbild](/src/client/img/ergebnis.jpg)
 
 ## Aufbau
 
@@ -14,7 +14,7 @@ Das Projekt wurde in ein existierendes Lego-Model eingebaut, nämlich dem Lego T
 
 Die Hauptfunktionalität ist das Fahren das Fahrzeug kann vor und zurück fahren und beidseitig einlenken. Beide Funktionen sind leider einstufig, d.h. Vollgas oder kein gas, voll Einschlag oder kein Einschlag. Der Antriebsmotor liesse sich problemlos mit PWM ansteuern, so könnte man verschiedene Leistungen erreichen. Da der Umfangprojekts aber sowieso schon eher zu gross war wurde darauf verzichtet. Dies stand jedoch nicht von Anfang an fest und es wurde Erweiterbarkeit Gedanken entwickelt. Die Lenkung ist auch binär, dies ist vor allem dem Lego Servomotor geschuldet dieser dreht eine Lego Achse auf -90 0 oder 90 Grad. Weiter gibt es die beiden Schaufelbewegungen, Schaufelheben und Schaufeldrehen. Die Ansteuerung ist analog zum Antriebsmotor. Um eine zurückspeisen von Informationen zu realisieren, wurde ein Drehencodepoti angebracht über dieses kann man das Steuerrad auf der Website bewegen. Die entwickelte Plattform öffnet Tür und Tor für Erweiterungen, die jetzt relativ einfach hinzugefügt werden können. Als Beispiel Gimmick ein Piezolautsprecher, auf Knopfdruck beim Drehencoder “hupt” er.
 
-![Website screenshot](/src/img/website_screenshot.png)
+![Website screenshot](/src/client/img/website_screenshot.png)
 
 ## Website
 
