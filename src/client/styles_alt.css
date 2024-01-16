@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.steeringwheel {
+  z-index: 2;
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  left: 35%;
+  top: 2%;
+  aspect-ratio: 1;
+}
+
+#myCanvas {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  /*background: blue;*/
+  top: 35%;
+  /*position: absolute; top: 450px;*/
+}
+
+#customImage {
+  z-index: 2;
+  position: absolute;
+  /*width: 100%;*/
+  height: 20%;
+  aspect-ratio: 1;
+  /*background: red;*/
+  top: 20%;
+  left: 43%;
+  /*position: absolute; top: 450px;*/
+}
+
+.startbutton {
+  z-index: 2;
+  position: absolute;
+  aspect-ratio: 1;
+  height: 5%;
+  /*ackground: red;*/
+  top: 33%;
+  left: 59%;
+  /*position: absolute; top: 450px;*/
+}
+
+.intereur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*
+  position: relative;
+  width: 75%;
+  padding-top: 40%;
+  top: 20%;
+  background: yellow;*/
+}
+
+.pressed {
+  box-shadow: 0 0 10px rgba(32, 27, 27, 0.5);
+  border-radius: 50%;
+  height: 4.5%;
+  top: 33.25%;
+  left: 59.25%;
+}
+
+.schaufel {
+  height: 4%;
+  z-index: 2;
+  position: absolute;
+  /*width: 3%;*/
+}
+
+#schaufel1 {
+  top: 52%;
+  left: 27%;
+}
+
+#schaufel2 {
+  top: 52%;
+  left: 19%;
+  aspect-ratio: 4/3;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="intereur">
+      <img id="customImage" src="img/steuerrad.png" alt="steuerradbild" />
+
+      <!--<svg id="startbutton">
+        
+        style="padding-bottom: 100%; height: 90%; left: 5%; top: 5%"
+      -->
+      <img
+        id="startbutton"
+        src="img/startbutton.png"
+        alt="Start Button"
+        onmousedown="addPressedEffect()"
+        onmouseup="removePressedEffect()"
+        class="startbutton"
+      />
+      <img
+        id="schaufel1"
+        src="img/schaufel1.png"
+        alt="schaufel1 pictogram"
+        class="schaufel"
+      />
+
+      <img
+        id="schaufel2"
+        src="img/schaufel2.png"
+        alt="schaufel2 pictogram"
+        class="schaufel"
+      />
+
+      <!-- </svg>-->
+
+      <canvas id="myCanvas" width="1200" height="200"></canvas>
+      <button onclick="send()">Click me</button>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>

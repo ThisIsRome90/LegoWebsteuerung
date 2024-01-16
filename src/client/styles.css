@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.intereur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em; /* Anpassen Sie den oberen Padding nach Bedarf */
+  width: 75%;
+  /*background: yellow;*/
+}
+
+#customImage {
+  z-index: 2;
+  width: 20%;
+  height: 20%; /* Anpassen Sie die Höhe nach Bedarf */
+  aspect-ratio: 1;
+  /*background: red;*/
+  margin-top: 2%; /* Anpassen Sie den oberen Rand nach Bedarf */
+  /*position: absolute; top: 450px;*/
+}
+
+#myCanvas {
+  z-index: 1;
+  width: 100%;
+  height: 10%; /* Anpassen Sie die Höhe nach Bedarf */
+  /*background: blue;*/
+  /*position: absolute; top: 450px;*/
+  /*margin-top: 2%; /* Anpassen Sie den oberen Rand nach Bedarf */
+}
+
+.startbutton {
+  z-index: 2;
+  position: absolute;
+  height: 5%;
+  aspect-ratio: 1;
+  /*ackground: red;*/
+  top: 55%;
+  left: 59.5%;
+  /*position: absolute; top: 450px;*/
+}
+
+.pressed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  height: 4.75%;
+  top: 55.5%;
+  left: 59.5%;
+}
+
+.schaufel {
+  height: 4%;
+  top: 74%;
+  z-index: 2;
+  position: absolute;
+  /*width: 3%;*/
+}
+
+#schaufel1 {
+  left: 33.5%;
+}
+
+#schaufel2 {
+  left: 27%;
+  aspect-ratio: 4/3;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="intereur">
+      <img id="customImage" src="img/volvosteuerrad.png" alt="steuerradbild" />
+
+      <img
+        id="startbutton"
+        src="img/startbutton.png"
+        alt="Start Button"
+        onmousedown="addPressedEffect()"
+        onmouseup="removePressedEffect()"
+        class="startbutton"
+      />
+      <img
+        id="schaufel1"
+        src="img/schaufel1.png"
+        alt="schaufel1 pictogram"
+        class="schaufel"
+      />
+
+      <img
+        id="schaufel2"
+        src="img/schaufel2.png"
+        alt="schaufel2 pictogram"
+        class="schaufel"
+      />
+
+      <canvas id="myCanvas" width="1200" height="200"></canvas>
+      <div style="display: flex; gap: 10px">
+        <button
+          id="connectionButton"
+          style="width: 40px; height: 20px; background-color: #e0e0e0"
+          onclick="connect()"
+        >
+          <img
+            src="img/wlan_symbol.png"
+            alt="Button Image"
+            style="height: 100%; object-fit: cover"
+          />
+        </button>
+
+        <button
+          id="steeringWheelbutton"
+          style="width: 50px; height: 20px; background-color: #e0e0e0"
+          onclick="changeSteeringwheel()"
+        >
+          Volvo
+        </button>
+      </div>
+    </div>
+    <div style="display: flex; gap: 10px"></div>
+    <script src="client.js"></script>
+  </body>
+</html>
